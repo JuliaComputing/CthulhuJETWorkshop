@@ -1,3 +1,17 @@
+# Cthulu.jl + JET.jl workshop
+
+This repository contains some examples and code snippets. Tested and developed
+with Julia version 1.12.0-rc3 and:
+
+```
+Cthulhu@v2.17.8
+JET@v0.10.7
+JuliaSyntax@v1.0.2
+```
+
+
+## Common issues related to `--trim`
+
 Specific code issues:
   1. `(vec...,)`
      - this operation requires an awkward `for`-loop code to `--trim`
