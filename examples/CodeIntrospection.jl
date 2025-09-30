@@ -122,3 +122,17 @@ x = 7.0
 # @code_typed optimize = true f1(x)
 @code_warntype optimize = false f1(x)
 @code_warntype optimize = true f1(x)
+
+
+# ## Cthulhu: recursive introspection
+
+function plus(x, y)
+    z = x + y
+    return z
+end
+
+x, y = 6, 7
+@descend plus(x, y)
+
+
+@descend f1(x)
